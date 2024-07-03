@@ -32,4 +32,5 @@ Llama-3-Base-8B-SFT-Ultrachat:
         - api_base: "http://localhost:8000/v1"
           api_key: "token-abc123"
     api_type: openai
+    tokenizer: "/app/models/Llama-3-Base-8B-SFT-Ultrachat"
     parallel: 1
