@@ -33,6 +33,7 @@ from utils import (
 def get_answer(
     question: dict, model: str, endpoint_info: dict, num_choices: int, max_tokens: int, temperature: float, answer_file: str, api_dict: dict
 ):
+    print("get_answer started")
     if question["category"] in temperature_config:
         temperature = temperature_config[question["category"]]
 
