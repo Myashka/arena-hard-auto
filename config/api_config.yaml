@@ -29,7 +29,7 @@ gpt-4-1106-preview:
 Llama-3-Base-8B-SFT-Ultrachat:
     model_name: /app/models/Llama-3-Base-8B-SFT-Ultrachat
     endpoints:
-        - api_base: "http://localhost:8000/v1"
+        - api_base: "http://localhost:8010/v1"
           api_key: "token-abc123"
     api_type: openai
     tokenizer: "/app/models/Llama-3-Base-8B-SFT-Ultrachat"
