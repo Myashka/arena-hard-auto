@@ -114,8 +114,7 @@ def chat_completion_openai(model, messages, temperature, max_tokens, api_dict=No
                 max_tokens=max_tokens,
                 stop=["<|end_of_text|>", "<|eot_id|>"]
                 )
-            output = completion.choices[0].message.content
-            print(f"completion {output}")
+            output = completion.choices[0].message.content.strip()
             break
         except openai.RateLimitError as e:
             print(type(e), e)
