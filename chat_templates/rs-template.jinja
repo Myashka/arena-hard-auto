@@ -1,0 +1,18 @@
+{%- set replica_start = ['<RS>'] %}
+{%- set replica_end = ['</RS>'] %}
+{{- '<bos>'}}
+{%- for message in messages %}
+    {%- if (message['role'] != 'bot') %}
+        {{- '<RS><' + message['role'] + '>' + message['content'] + '</RS>' }}
+    {%- elif (message['role'] == 'bot') %}
+        {{- '<RS><' + message['role'] + '>' }}
+        {%- generation %}
+            {{- message['content'] + '</RS>' }}
+        {%- endgeneration %}
+    {%- endif %}
+{%- endfor %}
+{%- if add_generation_prompt %}
+    {{- '<RS><bot>' }}
+{%- endif %}
+
+{{- '<eos>'}}
