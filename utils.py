@@ -111,8 +111,7 @@ def chat_completion_openai(model, messages, temperature, max_tokens, api_dict=No
                 messages=messages,
                 temperature=temperature,
                 max_tokens=max_tokens,
-                stop=["<|end_of_text|>", "<|eot_id|>", "</RS>"],
-                extra_body={"truncate_prompt_tokens": 2048},
+                stop=["<|end_of_text|>", "<|eot_id|>", "</RS>"]
             )
             output = completion.choices[0].message.content.strip()
             break
