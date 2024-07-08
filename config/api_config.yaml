@@ -22,9 +22,11 @@ gpt-4-0314:
 
 gpt-4-1106-preview:
     model_name: gpt-4-1106-preview
-    endpoints: null
+    endpoints:
+        - api_base: "https://openai-proxy.tcsbank.ru/public/v1"
+          api_key: "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InRtRG5YaUNldzlvS3hSc2gyZTNNdTVBNFBoNCIsImtpZCI6InRtRG5YaUNldzlvS3hSc2gyZTNNdTVBNFBoNCJ9.eyJhdWQiOiJtaWNyb3NvZnQ6aWRlbnRpdHlzZXJ2ZXI6ZjVlZmJlNDQtNDM0My00MzUzLThhODEtODFhMTg0OGE4Njc2IiwiaXNzIjoiaHR0cDovL2ZzLnRpbmtvZmYucnUvYWRmcy9zZXJ2aWNlcy90cnVzdCIsImlhdCI6MTcyMDM4MzQ5OSwibmJmIjoxNzIwMzgzNDk5LCJleHAiOjE3MjA0Njk4OTksImxvZ2luIjoic3ZjX3RycyIsImdyb3VwcyI6WyJ0YnAtb3BlbmFpLXByb3h5LWRpc2FibGUtY2lkIiwidGJwLW9wZW5haS1wcm94eS1wdWJsaWMtYWxsIl0sImFwcHR5cGUiOiJDb25maWRlbnRpYWwiLCJhcHBpZCI6ImY1ZWZiZTQ0LTQzNDMtNDM1My04YTgxLTgxYTE4NDhhODY3NiIsImF1dGhtZXRob2QiOiJ1cm46b2FzaXM6bmFtZXM6dGM6U0FNTDoyLjA6YWM6Y2xhc3NlczpQYXNzd29yZFByb3RlY3RlZFRyYW5zcG9ydCIsImF1dGhfdGltZSI6IjIwMjQtMDctMDdUMjA6MTg6MTkuMzY2WiIsInZlciI6IjEuMCIsInNjcCI6Im9wZW5pZCIsImlkc3ViIjoiUGJJVkRQSVJqeHlMN0szVUFWK3Q3eThPS3ZyN3gxMFNBUU1aTUZKemJCOD0ifQ.hPAp_uzEw1a15nnjztDsylOHCM1PGA34S8q8Lw9_DOjjF3_RR0GwovvYfTpDLJ5s7CoBqoye8QcqDy2ypk-wL7NtfD3QBdyCxuZu82dEA7DWpfId778HtkqttYLyEpUsG5aJxUFIWIKRPuZz20K2-ifZT1AV6pT_V977885Tngh0PIcV9QtIxhm4fS0TRKxunyPXUhapgrwqYROCi6Kz5a9FXclGgxzAtqVsO-PEm7c9i5je3jDhCH0Hr0Zb0dgtp3ZVl1RcwBu8xe2qGyadZWjCY_xq3dOZDetZB_E9vXn8IQYX-gaHF49NYwkBTqFfPAjHNb_IQYl4U1l59kU3Gw"
     api_type: openai
-    parallel: 8
+    parallel: 6
 
 Llama-3-Base-8B-SFT-Ultrachat:
     model_name: Llama-3-Base-8B-SFT-Ultrachat
@@ -114,4 +116,175 @@ Llama-3-Base-8B-TR_KTO-Tau_256-UltraFeedback:
           api_key: "token-abc123"
     api_type: openai
     tokenizer: "/app/models/Llama-3-Base-8B-TR_KTO-Tau_256-UltraFeedback"
+    parallel: 1
+
+Llama-3-Instruct-8B:
+    model_name: Llama-3-Instruct-8B
+    endpoints:
+        - api_base: "http://localhost:8010/v1"
+          api_key: "token-abc123"
+    api_type: openai
+    tokenizer: "/app/models/Llama-3-Instruct-8B"
+    parallel: 1
+
+Llama-3-Instruct-8B-DPO-UltraFeedback:
+    model_name: Llama-3-Instruct-8B-DPO-UltraFeedback
+    endpoints:
+        - api_base: "http://localhost:8010/v1"
+          api_key: "token-abc123"
+    api_type: openai
+    tokenizer: "/app/models/Llama-3-Instruct-8B-DPO-UltraFeedback"
+    parallel: 1
+
+Llama-3-Instruct-8B-TR_DPO-Alpha_0.6-UltraFeedback:
+    model_name: Llama-3-Instruct-8B-TR_DPO-Alpha_0.6-UltraFeedback
+    endpoints:
+        - api_base: "http://localhost:8010/v1"
+          api_key: "token-abc123"
+    api_type: openai
+    tokenizer: "/app/models/Llama-3-Instruct-8B-TR_DPO-Alpha_0.6-UltraFeedback"
+    parallel: 1
+
+Llama-3-Instruct-8B-IPO-UltraFeedback:
+    model_name: Llama-3-Instruct-8B-IPO-UltraFeedback
+    endpoints:
+        - api_base: "http://localhost:8010/v1"
+          api_key: "token-abc123"
+    api_type: openai
+    tokenizer: "/app/models/Llama-3-Instruct-8B-IPO-UltraFeedback"
+    parallel: 1
+
+Llama-3-Instruct-8B-TR_IPO-Alpha_0.6-UltraFeedback:
+    model_name: Llama-3-Instruct-8B-TR_IPO-Alpha_0.6-UltraFeedback
+    endpoints:
+        - api_base: "http://localhost:8010/v1"
+          api_key: "token-abc123"
+    api_type: openai
+    tokenizer: "/app/models/Llama-3-Instruct-8B-TR_IPO-Alpha_0.6-UltraFeedback"
+    parallel: 1
+
+Llama-3-Instruct-8B-TR_IPO-Tau_256-UltraFeedback:
+    model_name: Llama-3-Instruct-8B-TR_IPO-Tau_256-UltraFeedback
+    endpoints:
+        - api_base: "http://localhost:8010/v1"
+          api_key: "token-abc123"
+    api_type: openai
+    tokenizer: "/app/models/Llama-3-Instruct-8B-TR_IPO-Tau_256-UltraFeedback"
+    parallel: 1
+
+Llama-3-Instruct-8B-KTO-UltraFeedback:
+    model_name: Llama-3-Instruct-8B-KTO-UltraFeedback
+    endpoints:
+        - api_base: "http://localhost:8010/v1"
+          api_key: "token-abc123"
+    api_type: openai
+    tokenizer: "/app/models/Llama-3-Instruct-8B-KTO-UltraFeedback"
+    parallel: 1
+
+Llama-3-Instruct-8B-TR_KTO-Alpha_0.6-UltraFeedback:
+    model_name: Llama-3-Instruct-8B-TR_KTO-Alpha_0.6-UltraFeedback
+    endpoints:
+        - api_base: "http://localhost:8010/v1"
+          api_key: "token-abc123"
+    api_type: openai
+    tokenizer: "/app/models/Llama-3-Instruct-8B-TR_KTO-Alpha_0.6-UltraFeedback"
+    parallel: 1
+
+Llama-3-Instruct-8B-TR_KTO-Tau_256-UltraFeedback:
+    model_name: Llama-3-Instruct-8B-TR_KTO-Tau_256-UltraFeedback
+    endpoints:
+        - api_base: "http://localhost:8010/v1"
+          api_key: "token-abc123"
+    api_type: openai
+    tokenizer: "/app/models/Llama-3-Instruct-8B-TR_KTO-Tau_256-UltraFeedback"
+    parallel: 1
+
+Pythia-12B-SFT-Ultrachat:
+    model_name: Pythia-12B-SFT-Ultrachat
+    endpoints:
+        - api_base: "http://localhost:8010/v1"
+          api_key: "token-abc123"
+    api_type: openai
+    tokenizer: "/app/models/Pythia-12B-SFT-Ultrachat"
+    parallel: 1
+
+Pythia-12B-DPO-UltraFeedback:
+    model_name: Pythia-12B-DPO-UltraFeedback
+    endpoints:
+        - api_base: "http://localhost:8010/v1"
+          api_key: "token-abc123"
+    api_type: openai
+    tokenizer: "/app/models/Pythia-12B-DPO-UltraFeedback"
+    parallel: 1
+
+Pythia-12B-TR_DPO-Alpha_0.6-UltraFeedback:
+    model_name: Pythia-12B-TR_DPO-Alpha_0.6-UltraFeedback
+    endpoints:
+        - api_base: "http://localhost:8010/v1"
+          api_key: "token-abc123"
+    api_type: openai
+    tokenizer: "/app/models/Pythia-12B-TR_DPO-Alpha_0.6-UltraFeedback"
+    parallel: 1
+
+Pythia-12B-TR_DPO-Tau_256-UltraFeedback:
+    model_name: Pythia-12B-TR_DPO-Tau_256-UltraFeedback
+    endpoints:
+        - api_base: "http://localhost:8010/v1"
+          api_key: "token-abc123"
+    api_type: openai
+    tokenizer: "/app/models/Pythia-12B-TR_DPO-Tau_256-UltraFeedback"
+    parallel: 1
+
+Pythia-12B-IPO-UltraFeedback:
+    model_name: Pythia-12B-IPO-UltraFeedback
+    endpoints:
+        - api_base: "http://localhost:8010/v1"
+          api_key: "token-abc123"
+    api_type: openai
+    tokenizer: "/app/models/Pythia-12B-IPO-UltraFeedback"
+    parallel: 1
+
+Pythia-12B-TR_IPO-Alpha_0.6-UltraFeedback:
+    model_name: Pythia-12B-TR_IPO-Alpha_0.6-UltraFeedback
+    endpoints:
+        - api_base: "http://localhost:8010/v1"
+          api_key: "token-abc123"
+    api_type: openai
+    tokenizer: "/app/models/Pythia-12B-TR_IPO-Alpha_0.6-UltraFeedback"
+    parallel: 1
+
+Pythia-12B-TR_IPO-Tau_256-UltraFeedback:
+    model_name: Pythia-12B-TR_IPO-Tau_256-UltraFeedback
+    endpoints:
+        - api_base: "http://localhost:8010/v1"
+          api_key: "token-abc123"
+    api_type: openai
+    tokenizer: "/app/models/Pythia-12B-TR_IPO-Tau_256-UltraFeedback"
+    parallel: 1
+
+Pythia-12B-KTO-UltraFeedback:
+    model_name: Pythia-12B-KTO-UltraFeedback
+    endpoints:
+        - api_base: "http://localhost:8010/v1"
+          api_key: "token-abc123"
+    api_type: openai
+    tokenizer: "/app/models/Pythia-12B-KTO-UltraFeedback"
+    parallel: 1
+
+Pythia-12B-TR_KTO-Alpha_0.6-UltraFeedback:
+    model_name: Pythia-12B-TR_KTO-Alpha_0.6-UltraFeedback
+    endpoints:
+        - api_base: "http://localhost:8010/v1"
+          api_key: "token-abc123"
+    api_type: openai
+    tokenizer: "/app/models/Pythia-12B-TR_KTO-Alpha_0.6-UltraFeedback"
+    parallel: 1
+
+Pythia-12B-TR_KTO-Tau_256-UltraFeedback:
+    model_name: Pythia-12B-TR_KTO-Tau_256-UltraFeedback
+    endpoints:
+        - api_base: "http://localhost:8010/v1"
+          api_key: "token-abc123"
+    api_type: openai
+    tokenizer: "/app/models/Pythia-12B-TR_KTO-Tau_256-UltraFeedback"
     parallel: 1
