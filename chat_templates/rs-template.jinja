@@ -1,18 +1,20 @@
-{%- set replica_start = ['<RS>'] %}
-{%- set replica_end = ['</RS>'] %}
-{{- '<bos>'}}
-{%- for message in messages %}
-    {%- if (message['role'] != 'bot') %}
-        {{- '<RS><' + message['role'] + '>' + message['content'] + '</RS>' }}
-    {%- elif (message['role'] == 'bot') %}
-        {{- '<RS><' + message['role'] + '>' }}
-        {%- generation %}
-            {{- message['content'] + '</RS>' }}
-        {%- endgeneration %}
-    {%- endif %}
-{%- endfor %}
-{%- if add_generation_prompt %}
-    {{- '<RS><bot>' }}
-{%- endif %}
+{% set role_mapping = {'assistant': '<bot>', 'user': '<user>', 'system': '<system>'} %}
 
-{{- '<eos>'}}
+{% if messages[0]['role'] == 'system' %}
+    {% set offset = 1 %}
+{% else %}
+    {% set offset = 0 %}
+{% endif %}
+
+{{ bos_token }}
+{% for message in messages %}
+    {% if (message['role'] == 'user') != (loop.index0 % 2 == offset) %}
+        {{ raise_exception('Conversation roles must alternate user/assistant/user/assistant/...') }}
+    {% endif %}
+
+    {{ '<RS>' + role_mapping[message['role']] + message['content'] | trim + '</RS>' }}
+{% endfor %}
+
+{% if add_generation_prompt %}
+    {{ '<RS><bot>' }}
+{% endif %}
