@@ -145,7 +145,7 @@ Llama-3-Instruct-8B-TR_DPO-Alpha_0.6-UltraFeedback:
     tokenizer: "/app/models/Llama-3-Instruct-8B-TR_DPO-Alpha_0.6-UltraFeedback"
     parallel: 1
 
-Llama-3-Instruct-8B-TR_DPO-Tau_256UltraFeedback:
+Llama-3-Instruct-8B-TR_DPO-Tau_256-UltraFeedback:
     model_name: Llama-3-Instruct-8B-TR_DPO-Tau_256-UltraFeedback
     endpoints:
         - api_base: "http://localhost:8010/v1"
