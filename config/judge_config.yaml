@@ -12,7 +12,7 @@ baseline_model: gpt-4-0314
 
 pairwise: True
 temperature: 0
-max_tokens: 512
+max_tokens: 1024
 
 regex_pattern: \[\[([AB<>=]+)\]\]
 number_of_judgment_attempts: 2
@@ -32,3 +32,13 @@ model_list:
   - Llama-3-Base-8B-KTO-UltraFeedback
   - Llama-3-Base-8B-TR_KTO-Alpha_0.6-UltraFeedback
   - Llama-3-Base-8B-TR_KTO-Tau_256-UltraFeedback
+  - Llama-3-Instruct-8B
+  - Llama-3-Instruct-8B-DPO-UltraFeedback
+  - Llama-3-Instruct-8B-TR_DPO-Alpha_0.6-UltraFeedback
+  - Llama-3-Instruct-8B-TR_DPO-Tau_256-UltraFeedback
+  - Llama-3-Instruct-8B-IPO-UltraFeedback
+  - Llama-3-Instruct-8B-TR_IPO-Alpha_0.6-UltraFeedback
+  - Llama-3-Instruct-8B-TR_IPO-Tau_256-UltraFeedback
+  - Llama-3-Instruct-8B-KTO-UltraFeedback
+  - Llama-3-Instruct-8B-TR_KTO-Alpha_0.6-UltraFeedback
+  - Llama-3-Instruct-8B-TR_KTO-Tau_256-UltraFeedback
