@@ -214,7 +214,7 @@ Pythia-12B-SFT-Ultrachat:
         - api_base: "http://localhost:8010/v1"
           api_key: "token-abc123"
     api_type: openai
-    # tokenizer: "/app/models/Pythia-12B-SFT-Ultrachat"
+    tokenizer: "/app/models/Pythia-12B-SFT-Ultrachat"
     parallel: 1
     max_length: 1536
 
