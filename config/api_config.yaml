@@ -216,6 +216,7 @@ Pythia-12B-SFT-Ultrachat:
     api_type: openai
     # tokenizer: "/app/models/Pythia-12B-SFT-Ultrachat"
     parallel: 1
+    max_length: 1536
 
 Pythia-12B-DPO-UltraFeedback:
     model_name: Pythia-12B-DPO-UltraFeedback

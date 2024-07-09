@@ -147,6 +147,17 @@ if __name__ == "__main__":
                 os.environ["TOKENIZERS_PARALLELISM"] = "false"
                 tokenizer = AutoTokenizer.from_pretrained(endpoint_info["tokenizer"])
 
+                if "max_length" in endpoint_info:
+                    max_tokens_value = endpoint_info["max_length"]
+                    for question in questions:
+                        content = question["turns"][0]["content"]
+                        tokens = tokenizer.encode(content)
+                        if len(tokens) > max_tokens_value:
+                            truncated_tokens = tokens[-max_tokens_value:]
+                            truncated_content = tokenizer.decode(truncated_tokens, skip_special_tokens=True)
+                            question["turns"][0]["content"] = truncated_content
+
+                    question_list = [question["turns"][0]["content"] for question in questions]
                 tokens = tokenizer(question_list)
                 max_tokens = [(settings["max_tokens"] - len(prompt) - 300) for prompt in tokens["input_ids"]]
         else:
