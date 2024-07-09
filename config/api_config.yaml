@@ -216,7 +216,7 @@ Pythia-12B-SFT-Ultrachat:
     api_type: openai
     tokenizer: "/app/models/Pythia-12B-SFT-Ultrachat"
     parallel: 1
-    max_length: 1536
+    max_length: 1280
 
 Pythia-12B-DPO-UltraFeedback:
     model_name: Pythia-12B-DPO-UltraFeedback
@@ -226,6 +226,7 @@ Pythia-12B-DPO-UltraFeedback:
     api_type: openai
     tokenizer: "/app/models/Pythia-12B-DPO-UltraFeedback"
     parallel: 1
+    max_length: 1280
 
 Pythia-12B-TR_DPO-Alpha_0.6-UltraFeedback:
     model_name: Pythia-12B-TR_DPO-Alpha_0.6-UltraFeedback
@@ -235,6 +236,7 @@ Pythia-12B-TR_DPO-Alpha_0.6-UltraFeedback:
     api_type: openai
     tokenizer: "/app/models/Pythia-12B-TR_DPO-Alpha_0.6-UltraFeedback"
     parallel: 1
+    max_length: 1280
 
 Pythia-12B-TR_DPO-Tau_256-UltraFeedback:
     model_name: Pythia-12B-TR_DPO-Tau_256-UltraFeedback
@@ -244,6 +246,7 @@ Pythia-12B-TR_DPO-Tau_256-UltraFeedback:
     api_type: openai
     tokenizer: "/app/models/Pythia-12B-TR_DPO-Tau_256-UltraFeedback"
     parallel: 1
+    max_length: 1280
 
 Pythia-12B-IPO-UltraFeedback:
     model_name: Pythia-12B-IPO-UltraFeedback
@@ -253,6 +256,7 @@ Pythia-12B-IPO-UltraFeedback:
     api_type: openai
     tokenizer: "/app/models/Pythia-12B-IPO-UltraFeedback"
     parallel: 1
+    max_length: 1280
 
 Pythia-12B-TR_IPO-Alpha_0.6-UltraFeedback:
     model_name: Pythia-12B-TR_IPO-Alpha_0.6-UltraFeedback
@@ -262,6 +266,7 @@ Pythia-12B-TR_IPO-Alpha_0.6-UltraFeedback:
     api_type: openai
     tokenizer: "/app/models/Pythia-12B-TR_IPO-Alpha_0.6-UltraFeedback"
     parallel: 1
+    max_length: 1280
 
 Pythia-12B-TR_IPO-Tau_256-UltraFeedback:
     model_name: Pythia-12B-TR_IPO-Tau_256-UltraFeedback
@@ -271,6 +276,7 @@ Pythia-12B-TR_IPO-Tau_256-UltraFeedback:
     api_type: openai
     tokenizer: "/app/models/Pythia-12B-TR_IPO-Tau_256-UltraFeedback"
     parallel: 1
+    max_length: 1280
 
 Pythia-12B-KTO-UltraFeedback:
     model_name: Pythia-12B-KTO-UltraFeedback
@@ -280,6 +286,7 @@ Pythia-12B-KTO-UltraFeedback:
     api_type: openai
     tokenizer: "/app/models/Pythia-12B-KTO-UltraFeedback"
     parallel: 1
+    max_length: 1280
 
 Pythia-12B-TR_KTO-Alpha_0.6-UltraFeedback:
     model_name: Pythia-12B-TR_KTO-Alpha_0.6-UltraFeedback
@@ -289,6 +296,7 @@ Pythia-12B-TR_KTO-Alpha_0.6-UltraFeedback:
     api_type: openai
     tokenizer: "/app/models/Pythia-12B-TR_KTO-Alpha_0.6-UltraFeedback"
     parallel: 1
+    max_length: 1280
 
 Pythia-12B-TR_KTO-Tau_256-UltraFeedback:
     model_name: Pythia-12B-TR_KTO-Tau_256-UltraFeedback
@@ -298,3 +306,4 @@ Pythia-12B-TR_KTO-Tau_256-UltraFeedback:
     api_type: openai
     tokenizer: "/app/models/Pythia-12B-TR_KTO-Tau_256-UltraFeedback"
     parallel: 1
+    max_length: 1280
