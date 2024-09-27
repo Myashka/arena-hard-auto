@@ -22,32 +22,33 @@ prompt_template: ["<|User Prompt|>\n{question_1}\n\n<|The Start of Assistant A's
 
 # Add your model below for evaluation
 model_list:
-  - Llama-3-Base-8B-SFT-Ultrachat
-  - Llama-3-Base-8B-DPO-UltraFeedback
-  - Llama-3-Base-8B-TR_DPO-Alpha_0.6-UltraFeedback
-  - Llama-3-Base-8B-TR_DPO-Tau_256-UltraFeedback
-  - Llama-3-Base-8B-IPO-UltraFeedback
-  - Llama-3-Base-8B-TR_IPO-Alpha_0.6-UltraFeedback
-  - Llama-3-Base-8B-TR_IPO-Tau_256-UltraFeedback
-  - Llama-3-Base-8B-KTO-UltraFeedback
-  - Llama-3-Base-8B-TR_KTO-Alpha_0.6-UltraFeedback
-  - Llama-3-Base-8B-TR_KTO-Tau_256-UltraFeedback
-  - Llama-3-Instruct-8B
-  - Llama-3-Instruct-8B-DPO-UltraFeedback
-  - Llama-3-Instruct-8B-TR_DPO-Alpha_0.6-UltraFeedback
-  - Llama-3-Instruct-8B-TR_DPO-Tau_256-UltraFeedback
-  - Llama-3-Instruct-8B-IPO-UltraFeedback
-  - Llama-3-Instruct-8B-TR_IPO-Alpha_0.6-UltraFeedback
-  - Llama-3-Instruct-8B-TR_IPO-Tau_256-UltraFeedback
-  - Llama-3-Instruct-8B-KTO-UltraFeedback
-  - Llama-3-Instruct-8B-TR_KTO-Alpha_0.6-UltraFeedback
-  - Llama-3-Instruct-8B-TR_KTO-Tau_256-UltraFeedback
-  - Pythia-12B-DPO-UltraFeedback
-  - Pythia-12B-IPO-UltraFeedback
-  - Pythia-12B-KTO-UltraFeedback
-  - Pythia-12B-TR_DPO-Alpha_0.6-UltraFeedback
-  - Pythia-12B-TR_IPO-Alpha_0.6-UltraFeedback
-  - Pythia-12B-TR_KTO-Alpha_0.6-UltraFeedback
-  - Pythia-12B-TR_DPO-Tau_256-UltraFeedback
-  - Pythia-12B-TR_IPO-Tau_256-UltraFeedback
-  - Pythia-12B-TR_KTO-Tau_256-UltraFeedback
+  # - Llama-3-Base-8B-SFT-Ultrachat
+  # - Llama-3-Base-8B-DPO-UltraFeedback
+  # - Llama-3-Base-8B-TR_DPO-Alpha_0.6-UltraFeedback
+  # - Llama-3-Base-8B-TR_DPO-Tau_256-UltraFeedback
+  # - Llama-3-Base-8B-IPO-UltraFeedback
+  # - Llama-3-Base-8B-TR_IPO-Alpha_0.6-UltraFeedback
+  # - Llama-3-Base-8B-TR_IPO-Tau_256-UltraFeedback
+  # - Llama-3-Base-8B-KTO-UltraFeedback
+  # - Llama-3-Base-8B-TR_KTO-Alpha_0.6-UltraFeedback
+  # - Llama-3-Base-8B-TR_KTO-Tau_256-UltraFeedback
+  # - Llama-3-Instruct-8B
+  # - Llama-3-Instruct-8B-DPO-UltraFeedback
+  # - Llama-3-Instruct-8B-TR_DPO-Alpha_0.6-UltraFeedback
+  # - Llama-3-Instruct-8B-TR_DPO-Tau_256-UltraFeedback
+  # - Llama-3-Instruct-8B-IPO-UltraFeedback
+  # - Llama-3-Instruct-8B-TR_IPO-Alpha_0.6-UltraFeedback
+  # - Llama-3-Instruct-8B-TR_IPO-Tau_256-UltraFeedback
+  # - Llama-3-Instruct-8B-KTO-UltraFeedback
+  # - Llama-3-Instruct-8B-TR_KTO-Alpha_0.6-UltraFeedback
+  # - Llama-3-Instruct-8B-TR_KTO-Tau_256-UltraFeedback
+  # - Pythia-12B-DPO-UltraFeedback
+  # - Pythia-12B-IPO-UltraFeedback
+  # - Pythia-12B-KTO-UltraFeedback
+  # - Pythia-12B-TR_DPO-Alpha_0.6-UltraFeedback
+  # - Pythia-12B-TR_IPO-Alpha_0.6-UltraFeedback
+  # - Pythia-12B-TR_KTO-Alpha_0.6-UltraFeedback
+  # - Pythia-12B-TR_DPO-Tau_256-UltraFeedback
+  # - Pythia-12B-TR_IPO-Tau_256-UltraFeedback
+  # - Pythia-12B-TR_KTO-Tau_256-UltraFeedback
+  - Pythia-12B-SFT-Ultrachat

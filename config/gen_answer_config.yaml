@@ -8,4 +8,4 @@ num_choices: 1
 
 # a list of model to generate answers
 model_list:
-  - Llama-3-Base-8B-DPO-UltraFeedback
+  - Llama-3-Base-8B-TR_IPO-Tau_32-UltraFeedback
