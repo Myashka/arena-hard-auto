@@ -23,6 +23,23 @@ gpt-4-0314:
 gpt-4-1106-preview:
     model_name: gpt-4-1106-preview
     endpoints:
+        - api_base: "https://openai-proxy.tcsbank.ru/public/v1"
+          api_key: "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InRtRG5YaUNldzlvS3hSc2gyZTNNdTVBNFBoNCIsImtpZCI6InRtRG5YaUNldzlvS3hSc2gyZTNNdTVBNFBoNCJ9.eyJhdWQiOiJtaWNyb3NvZnQ6aWRlbnRpdHlzZXJ2ZXI6ZjVlZmJlNDQtNDM0My00MzUzLThhODEtODFhMTg0OGE4Njc2IiwiaXNzIjoiaHR0cDovL2ZzLnRpbmtvZmYucnUvYWRmcy9zZXJ2aWNlcy90cnVzdCIsImlhdCI6MTcyNzU2NDQ2MiwibmJmIjoxNzI3NTY0NDYyLCJleHAiOjE3Mjc2NTA4NjIsImxvZ2luIjoic3ZjX3RycyIsImdyb3VwcyI6WyJ0YnAtb3BlbmFpLXByb3h5LWRpc2FibGUtY2lkIiwidGJwLW9wZW5haS1wcm94eS1wdWJsaWMtYWxsIl0sImFwcHR5cGUiOiJDb25maWRlbnRpYWwiLCJhcHBpZCI6ImY1ZWZiZTQ0LTQzNDMtNDM1My04YTgxLTgxYTE4NDhhODY3NiIsImF1dGhtZXRob2QiOiJ1cm46b2FzaXM6bmFtZXM6dGM6U0FNTDoyLjA6YWM6Y2xhc3NlczpQYXNzd29yZFByb3RlY3RlZFRyYW5zcG9ydCIsImF1dGhfdGltZSI6IjIwMjQtMDktMjhUMjM6MDE6MDIuODgyWiIsInZlciI6IjEuMCIsInNjcCI6Im9wZW5pZCIsImlkc3ViIjoiUGJJVkRQSVJqeHlMN0szVUFWK3Q3eThPS3ZyN3gxMFNBUU1aTUZKemJCOD0ifQ.iIqFIjGAWIXIB4a52SoywQKSxwe6ljxcLXZ67BNVqK7bwNwRNXGRW6Yf7H0yd3IG2vchzHuW9CFprWLcMeOwnaSnrtr0xd93F_Mnr9PuS_U50RZBKbVMbLrGBAaos-DEch9exb-kffrrNQlOp4wkp9i6QOKjkIM-zgV1oqfKNRIog_yaXE-ZZJx2YjbP7rLY9YsWJdmi3gRYlPej2W7AUi7f3xG0y3mJRpWhXQUVBpri7fnRIfwBKYcjNWchvGyhgSyTq9V8Pkbio-pV_kgNj9zQd1JFMu3BFpilsyjSTxdHmFHk5psm1i44GHXofGECRZMpbgFbI_CafarcWrnLVQ"
+    api_type: openai
+    parallel: 8
+
+Llama-3-Base-8B-TR_KTO-Alpha_0.8-UltraFeedback:
+    model_name: Llama-3-Base-8B-TR_KTO-Alpha_0.8-UltraFeedback
+    endpoints:
+        - api_base: "http://localhost:8010/v1"
+          api_key: "token-abc123"
+    api_type: openai
+    tokenizer: "/app/models/Llama-3-Base-8B-TR_KTO-Alpha_0.8-UltraFeedback"
+    parallel: 1
+
+Llama-3-Base-8B-TR_KTO-Tau_32-UltraFeedback:
+    model_name: Llama-3-Base-8B-TR_KTO-Tau_32-UltraFeedback
+    endpoints:
         - api_base: "http://localhost:8010/v1"
           api_key: "token-abc123"
     api_type: openai
