@@ -111,7 +111,7 @@ def chat_completion_openai(model, messages, temperature, max_tokens, api_dict=No
                 messages=messages,
                 temperature=temperature,
                 max_tokens=max_tokens,
-                stop=["<|end_of_text|>", "<|eot_id|>", "</RS>"]
+                stop=["<|end_of_text|>", "<|eot_id|>", "</RS>", "</s>"],
             )
             output = completion.choices[0].message.content.strip()
             break
@@ -128,9 +128,7 @@ def chat_completion_openai(model, messages, temperature, max_tokens, api_dict=No
     return output
 
 
-def chat_completion_openai_azure(
-    model, messages, temperature, max_tokens, api_dict=None
-):
+def chat_completion_openai_azure(model, messages, temperature, max_tokens, api_dict=None):
     import openai
     from openai import AzureOpenAI
 
@@ -210,10 +208,7 @@ def chat_completion_mistral(model, messages, temperature, max_tokens):
     api_key = os.environ["MISTRAL_API_KEY"]
     client = MistralClient(api_key=api_key)
 
-    prompts = [
-        ChatMessage(role=message["role"], content=message["content"])
-        for message in messages
-    ]
+    prompts = [ChatMessage(role=message["role"], content=message["content"]) for message in messages]
 
     output = API_ERROR_OUTPUT
     for _ in range(API_MAX_RETRY):
@@ -281,9 +276,7 @@ def chat_completion_cohere(model, messages, temperature, max_tokens):
     if len(messages) > 1:
         history = []
         for message in messages[:-1]:
-            history.append(
-                {"role": template_map[message["role"]], "message": message["content"]}
-            )
+            history.append({"role": template_map[message["role"]], "message": message["content"]})
     else:
         history = None
 
